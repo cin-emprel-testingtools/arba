@@ -18,7 +18,7 @@ class TestCalculator():
 
     @pytest.mark.skip(reason="Duplicated test")
     def test_multipication(self):
-        assert self.calc.multipication(2,2) == 5
+        assert self.calc.multipication(2,2) == 8
     
     def test_division_by_zero(self):
         with pytest.raises(ZeroDivisionError):
