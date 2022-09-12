@@ -14,11 +14,11 @@ class TestCalculator():
         assert self.calc.addition(2,2) == 4
 
     def test_subtraction(self):
-        assert self.calc.subtraction(2,2) == 0
+        assert self.calc.subtraction(2,2) == 3
 
     @pytest.mark.skip(reason="Duplicated test")
     def test_multipication(self):
-        assert self.calc.multipication(2,2) == 8
+        assert self.calc.multipication(2,2) == 4
     
     def test_division_by_zero(self):
         with pytest.raises(ZeroDivisionError):
